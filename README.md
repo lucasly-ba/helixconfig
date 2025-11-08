@@ -1,2 +1,1 @@
-# helixconfig
-My helix config
+My Helix Config

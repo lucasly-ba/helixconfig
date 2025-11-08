@@ -1,0 +1,123 @@
+S tier:
+
+I,A : write beggining/end of line
+o,O : go under/above line
+w,b,e : go to next/last word
+e + b: select a word when going in a middle of it
+d,c : delete, delete then write
+Alt + d,c: delete without yanking
+x: select whole line 
+,: deselect
+u,U : undo,redo
+N,n: go backward/forward in search /
+Select + * + n: go to next occurence
+v + Select + * + n: change next occurence
+x + s + regex: change everything in line with another word
+&: align selected
+R: replace yanked text
+J: join lines and remove \n
+<,>: indent,unident
+
+Ctrl + s, Ctrl + i, Ctrl + o : make jump, go to jump
+=: format
+
+
+mm: go to next bracket, parenthesis
+mi(: select inside bracket
+ma(: select inside and bracket
+ms(: put every selected words into bracket
+ms': same
+ms": same
+md(: delete bracket
+mr([: replace bracket with bracket
+
+# deprecated
+space + w + ns: open split vertically
+space + w + nv: open split horizontally
+space + w + hjkl pour move 
+space + w + w pour move in the order of opened splits
+space + o pour close tout 
+space + w + HJKL to move windo
+
+
+space + f : file picker
+Space + f + ctrl + v : vertical split
+Space + f + ctrl + s : horizontal split
+space + F: file picker in current directory
+space + b: buffer picker
+space + j: jumplist picker
+space + g : changed file picker
+space + G : debug
+space + k: documentation for item
+space + s : document symbol picker
+space + S: workspace document symbol picker
+space + d: document diagnostic picker
+space + r: rename symbol
+space + a: apply code action
+space + h: select symbol reference
+space + w: enter window mode
+space + c : comment
+space + C : comment block
+space + y : yank
+
+
+TOMAP:
+BUFFERNEXT,BUFFERPREVIOUS
+
+g: goto
+30 + G: line 30
+g + e: end of file
+g + d: definition
+g + D: declaration
+g + y: type declaration
+g + r: reference
+g + i: implementation
+g + a: go to last accessed file
+g + m: go to last modified file
+g + n: go to next buffer
+g + p: go to prev buffer 
+g + .: go to last modification
+gw: jump to nextword
+
+]d : next error
+]D : last diag
+]f : next function
+]t: next type def
+]a: next arg
+]c: next comment
+]T: next test
+]p: next paragraph
+]g: next change
+]G last change
+]Space: add newline below
+
+
+completion:
+
+enter: accept
+ctrl+c: decline
+
+Insert mode:
+
+ctrl+x: autocomplete
+ctrl+r: register
+ctrl+w: delete prev word
+alt+w: delete next word
+ctrl+u: delete to start of line
+ctrl+k: delete to eof
+ctrl+h: delete prev char
+ctrl+d: delete next char
+ctrl+j: insert new line
+
+Pickers insane
+
+A tier:
+
+C: multicursors
+.: repete
+shift + ~ `: uppercase, lowercase
+
+D tier:
+
+"<ch registers
+Q : macro

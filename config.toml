@@ -1,0 +1,62 @@
+theme = "base16_transparent"
+
+[keys.normal]
+"l" = "move_char_left"
+";" = "move_visual_line_down"
+"'" = "move_visual_line_up"
+"\\" = "move_char_right"
+"," = ["collapse_selection", "keep_primary_selection"]
+"C-f" = "search"
+"p" = ["select_mode","goto_line_end","paste_after"]
+"P" = ["paste_after"]
+"k" = [ "yank" ]
+"D" = { "l" = [ "insert_mode", "kill_to_line_start" ] , "\\" = [ "insert_mode","kill_to_line_end"]}
+"tab" = "goto_line"
+"f" = [ "goto_word" ]
+"F" = [ "extend_line_below","select_regex"]
+"X" = [ "move_visual_line_up", "extend_line_below" ]
+"S-g" = ["goto_file_start","select_mode","goto_last_line","extend_line_below","yank_to_clipboard"]
+
+[keys.insert]
+"l" = { ';'= "normal_mode"}
+"A-l" = "move_char_left"
+"A-;" = "move_visual_line_down"
+"A-'" = "move_visual_line_up"
+"A-\\" = "move_char_right"
+
+
+[keys.select]
+
+"l" = "extend_char_left"
+";" = "extend_line_down"
+"'" = "extend_line_up"
+"\\" = "extend_char_right"
+"," = ["collapse_selection","normal_mode"]
+
+
+[keys.normal.g]
+"l" = "goto_line_start"
+"\\" = "goto_line_end"
+
+[keys.normal.space]
+"l" =  "jump_view_left" 
+";" =  "jump_view_down" 
+"'" =  "jump_view_up" 
+"\\" =  "jump_view_right" 
+"v" =  "vsplit"
+"h" =  "hsplit"
+"tab" =  "rotate_view" 
+"L" =  "swap_view_left" 
+":" =  "swap_view_down" 
+"\"" =  "swap_view_up" 
+"|" =  "swap_view_right" 
+"o" =  "wonly"
+"q" = ":buffer-close"
+
+[keys.normal.z]
+"x" = "align_view_bottom"
+"c" = "align_view_top"
+
+[editor]
+auto-pairs = false
+
