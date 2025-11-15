@@ -6,6 +6,7 @@ theme = "base16_transparent"
 "'" = "move_visual_line_up"
 "\\" = "move_char_right"
 "," = ["collapse_selection", "keep_primary_selection"]
+"p" = "@vllp,"
 "C-f" = "search"
 "k" = [ "yank" ]
 "D" = { "l" = [ "insert_mode", "kill_to_line_start" ] , "\\" = [ "insert_mode","kill_to_line_end"]}
@@ -14,6 +15,7 @@ theme = "base16_transparent"
 "S-g" = ["goto_file_start","select_mode","goto_last_line","extend_line_below","yank_to_clipboard"]
 "C-l" = ["goto_line_start"]
 "C-\\" = ["goto_line_end"]
+"C-x" = ":wq"
 
 [keys.insert]
 "l" = { ';'= "normal_mode"}
