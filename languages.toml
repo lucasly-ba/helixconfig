@@ -10,6 +10,9 @@ args = [
 
 ]
 
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
 [[language]]
 
 auto-format = true
@@ -18,7 +21,7 @@ name = "cpp"
 
 language-servers = ["clangd--001"] 
 
-file-types = ["cc", "hh","hxx"]
+file-types = ["cc", "hh","hxx","h","cpp"]
 
 [[language]]
 
@@ -29,3 +32,13 @@ name = "c"
 language-servers = [ "clangd--001"] 
 
 file-types = ["c","h"]
+
+[[language]]
+
+auto-format = true
+
+name = "rust"
+
+file-types = ["rs"]
+
+language-servers = ["rust-analyzer"]
